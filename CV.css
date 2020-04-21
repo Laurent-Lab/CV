@@ -1,0 +1,316 @@
+/*Polices*/
+
+@font-face {
+    font-family: 'Chunk Five';
+    src :url(font/Chunk Five Print.otf);
+    src :url(font/ChunkFive-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'helsinki';
+    src :url(font/helsinki.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFE702;
+    color: #fff;
+}
+
+section {
+    display: table;
+    width: 100%;
+}
+
+/* Style des listes à puce*/
+ul {
+    list-style-type: square;
+}
+
+/* nav menu */
+nav.nav ul li{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    margin-top: 10%;
+
+}
+
+nav.nav ul li a{
+
+
+    font-family: 'helsinki', comic Sans MS;
+    font-style: bold;
+    border-radius: 150px;
+    border : 5px solid #400099;
+    text-decoration: none;
+    background-color: #DABFFE;
+    color: #FFE702;
+    padding: 15px;
+    text-transform: uppercase;
+
+}
+
+aside {
+
+    max-width: 80%;
+    border : solid 2px #400099;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #DABFFE;
+}
+
+/* Au survol d'un lien */
+a:hover {
+
+    background-color:#FFE702; 
+
+
+}
+
+a:link {
+    text-decoration: none;
+    color: #2D006B;
+}
+
+/* Comportement responsive aside */
+@media all and (max-width: 1024px){
+
+    aside {
+
+        max-width: 80%;
+        margin-left: 40px;
+    }
+}
+
+p {
+    color: #2D006B;
+    font-size: 1em;
+    font-family: 'helsinki', comic Sans MS;
+    text-align: center;
+}
+
+/* Comportement responsive paragraphe */
+@media all and (max-width: 1024px){
+
+    p {
+        font-size: 0.8em;
+    }
+
+}
+
+/* about */
+section#about {
+
+    /* Aligner le parent*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1px;
+    margin-top: 75px;
+    background-color: #400099;
+
+      
+
+}
+
+/* About comportement responsive */
+@media all and (max-width: 1024px){
+
+    section#about {
+
+        display: block;
+    }
+
+}
+
+/* Profil */
+section#profil {
+
+    /* Aligner le parent*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1px;
+    background-color: #400099; 
+
+}
+
+/* Profil comportement responsive */
+@media all and (max-width: 1024px){
+
+    section#profil {
+
+        display: block;
+    }
+}
+
+/* Container */
+.section-container {
+
+    overflow: auto;
+    max-height: 450px;
+    flex: 1 1 0;
+
+    padding: 5px;
+    margin:5px;
+    background-color: #DABFFE;
+    color: black;
+    font-family: 'helsinki', comic Sans ms;
+    font-size: 0.9em;
+    border:3px solid #400099;
+}
+
+/* Style du scroll */
+
+/*Style de la barre*/
+::-webkit-scrollbar {
+
+    background-color: #fff;
+    border-radius: 10px;
+    width: 15px;
+}
+
+/* Style du bouton */
+::-webkit-scrollbar-thumb {
+
+    border-radius: 10px;
+    background-color: #FFE702;
+    border:1px solid #fff;
+}
+
+/* Style du contenant */
+::-webkit-scrollbar-track {
+
+
+
+}
+
+li {
+    color: #2D006B;
+}
+
+
+
+/* Zone de texte */
+.bulle {
+
+    border: 3px solid #400099;
+    border-radius: 100px;
+    background-color: #B580FE;
+    margin-bottom: 5px;
+    padding: 30px;
+}
+
+/* Images / puces */
+li.gmail {
+
+    margin: 0;
+    padding: 36px 0 36px 46px;
+    list-style: none;
+    background-image: url(img/send.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px;
+
+
+}
+
+li.tel {
+
+    margin: 0;
+    padding: 36px 0 36px 46px;
+    list-style: none;
+    background-image: url(img/smartphone.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 30px;
+
+}
+
+li.adress {
+
+    margin: 0;
+    padding: 36px 0 36px 46px;
+    list-style: none;
+    background-image: url(img/adress.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 40px;
+
+}
+
+/*Titres des containers*/
+h1 {
+
+    font-size: 2em;
+    background-color: #B580FE;
+    color: #FFE702;
+    text-align: center;
+    border: 2px solid #2D006B;
+    border-radius: 20px;
+    padding: 2px;
+
+}
+
+/* Titres des zones de texte */
+h2 {
+    
+    font-size: 1.5em;
+    color: #FFE702;
+}
+
+/* Elements en gras */
+em {
+
+    color: #2D006B;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.3em;
+}
+
+span {
+    color: #FFE702;
+
+}
+
+/* header */
+header {
+    
+  
+    background-color: #FFE702;
+}
+
+header img.avatar-img {
+   
+    width: 120px;
+    border-radius: 300px;
+    border: 10px solid #400099;
+    float: right;
+   
+    
+
+}
+
+header h3.big-title {
+
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: justify;
+    font-family: 'helsinki', comic sans ms;
+    color: #2D006B;
+
+}
+
+/* pied de page */
+footer {
+    display: flex;
+    justify-content: center;
+}
