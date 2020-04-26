@@ -1,5 +1,4 @@
 /*Polices*/
-
 @font-face {
     font-family: 'Chunk Five';
     src :url(font/Chunk Five Print.otf);
@@ -15,160 +14,18 @@
     font-style: normal;
 }
 
+/*Config HTML*/
 html {
     scroll-behavior: smooth;
 }
 
+/*Corps de la page*/
 body {
-    background-color: #FFE702;
+    background:linear-gradient(#F9F7F6, #E9E7E5, #DEDDDC);
     color: #fff;
 }
 
-section {
-    display: table;
-    width: 100%;
-}
-
-/* Style des listes à puce*/
-ul {
-    list-style-type: square;
-}
-
-/* nav menu */
-nav.nav ul li{
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-    margin-top: 10%;
-
-}
-
-nav.nav ul li a{
-
-
-    font-family: 'helsinki', comic Sans MS;
-    font-style: bold;
-    border-radius: 150px;
-    border : 5px solid #400099;
-    text-decoration: none;
-    background-color: #DABFFE;
-    color: #FFE702;
-    padding: 15px;
-    text-transform: uppercase;
-
-}
-
-aside {
-
-    max-width: 80%;
-    border : solid 2px #400099;
-    padding: 5px;
-    border-radius: 10px;
-    background-color: #DABFFE;
-}
-
-/* Au survol d'un lien */
-a:hover {
-
-    background-color:#FFE702; 
-
-
-}
-
-a:link {
-    text-decoration: none;
-    color: #2D006B;
-}
-
-/* Comportement responsive aside */
-@media all and (max-width: 1024px){
-
-    aside {
-
-        max-width: 80%;
-        margin-left: 40px;
-    }
-}
-
-p {
-    color: #2D006B;
-    font-size: 1em;
-    font-family: 'helsinki', comic Sans MS;
-    text-align: center;
-}
-
-/* Comportement responsive paragraphe */
-@media all and (max-width: 1024px){
-
-    p {
-        font-size: 0.8em;
-    }
-
-}
-
-/* about */
-section#about {
-
-    /* Aligner le parent*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1px;
-    margin-top: 75px;
-    background-color: #400099;
-
-      
-
-}
-
-/* About comportement responsive */
-@media all and (max-width: 1024px){
-
-    section#about {
-
-        display: block;
-    }
-
-}
-
-/* Profil */
-section#profil {
-
-    /* Aligner le parent*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1px;
-    background-color: #400099; 
-
-}
-
-/* Profil comportement responsive */
-@media all and (max-width: 1024px){
-
-    section#profil {
-
-        display: block;
-    }
-}
-
-/* Container */
-.section-container {
-
-    overflow: auto;
-    max-height: 450px;
-    flex: 1 1 0;
-
-    padding: 5px;
-    margin:5px;
-    background-color: #DABFFE;
-    color: black;
-    font-family: 'helsinki', comic Sans ms;
-    font-size: 0.9em;
-    border:3px solid #400099;
-}
-
-/* Style du scroll */
+/* Style des barres de scroll */
 
 /*Style de la barre*/
 ::-webkit-scrollbar {
@@ -188,28 +45,310 @@ section#profil {
 
 /* Style du contenant */
 ::-webkit-scrollbar-track {
+}
 
+.border{
 
+    width: 50%;
+    height: 5px;
+    background-color: #CD5F2B;
+    margin-left: 40%;
+}
+
+/*Lignes de séparation*/
+.border1{
+    width: 70%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.border2{
+    width: 50%;
+    height: 5px;
+    background-color: #CD5F2B;
+    margin-left: 40%;
+    margin-bottom: 40px;
+}
+
+.border3{
+    width: 70%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.border4{
+
+    width: 70%;
+    height: 5px;
+    background-color: #CD5F2B;
+    margin: auto;
+}
+
+/* header */
+header {
+    
+    background-color: #1fe0;
+}
+
+/* Style du texte par défaut */
+p {
+    color: black;
+    font-size: 1em;
+    font-family: 'helsinki';
+    text-align: center;
+}
+/* Comportement responsive du texte par défaut */
+@media all and (max-width: 1024px){
+
+    p {
+        font-size: 0.8em;
+    }
+}
+
+/*Titre du header*/
+header h3.big-title {
+
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: justify;
+    font-family: 'helsinki';
+    color: #CD5F2B;
+    text-shadow: 2px 2px 2px #CD5F2B;
 
 }
 
-li {
-    color: #2D006B;
+/*Image dans le header*/
+header img.avatar-img {
+   
+    width: 120px;
+    border-radius: 300px;
+    border: 10px solid #CD5F2B;
+    float: right;
+   
 }
 
+/*Aside introduction*/
+aside {
 
+    max-width: 80%;
+    border : solid 2px black;
+    padding: 5px;
+    background: linear-gradient(#CD5F2B, #DEAE5A);
+}
+/* Comportement responsive aside */
+@media all and (max-width: 1024px){
 
-/* Zone de texte */
+    aside {
+
+        max-width: 80%;
+        margin-left: 40px;
+    }
+}
+
+/* nav menu */
+nav.nav ul li{
+
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    margin-top: 10%;
+}
+
+/*Boutons menu nav*/
+nav.nav ul li a{
+
+    font-family: 'helsinki';
+    font-style: bold;
+    border-radius: 150px;
+    border : 2px solid black;
+    text-decoration: none;
+    background:linear-gradient(#CD5F2B, #DEAE5A);
+    color: #FFE702;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+/* Sections par défaut */
+section {
+    display: table;
+    width: 100%;
+}
+
+/*Sidebar introduction premier container*/
+section#side0 {
+    width: 100%;
+    background-color: #1fe0;
+}
+
+/*Image de l'introduction du premier container*/
+section img.sidebar {
+
+    width: 100px;
+    border-radius: 300px;
+    border: 10px solid #CD5F2B;
+    float: left;
+    margin-left: 15%;
+    margin-bottom: 10px;
+}
+/*Comportement responsive image d'intro premier container*/
+@media all and (max-width: 1024px){
+
+    section img.sidebar {
+
+        width: 60px;
+        border: 10px solid #CD5F2B;
+    }
+}
+
+/*Titres des containers*/
+h4 {
+   
+    text-align: center;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: 'helsinki';
+    color: #CD5F2B;
+    text-shadow: 2px 2px 2px #CD5F2B;
+}
+/* Comportement responsive titres des containers  */
+@media all and (max-width: 1024px){
+
+    h4 {
+
+        font-size: 1.5em;
+    }
+}
+
+/* Container parent */
+section#about {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1px;
+    border : 1px solid black;
+    background :linear-gradient(#CD5F2B, #DEAE5A);
+}
+/* Comportement responsive container parent */
+@media all and (max-width: 1024px){
+
+    section#about {
+
+        display: block;
+    }
+
+}
+
+/* Premier container */
+.section-container {
+
+    overflow: auto;
+    max-height: 450px;
+    flex: 1 1 0;
+    padding: 5px;
+    margin:5px;
+    background:linear-gradient(#CD5F2B, #DEAE5A);
+    color: black;
+    font-family: 'helsinki';
+    font-size: 0.9em;
+    border:3px solid black;
+}
+
+/*Titres des containers*/
+h1 {
+
+    font-size: 2em;
+    background:linear-gradient(#CD5F2B, #DEAE5A);
+    color: #FFE702;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+/* Zone de texte des containers */
 .bulle {
 
-    border: 3px solid #400099;
+    border: 3px solid black;
     border-radius: 100px;
-    background-color: #B580FE;
+    background-color: #fff;
     margin-bottom: 5px;
     padding: 30px;
 }
 
-/* Images / puces */
+/* Titres des zones de texte */
+h2 {
+    
+    font-size: 1.5em;
+    color: black;
+}
+
+/* Sous titres zones de texte */
+em {
+
+    color: black;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.3em;
+}
+
+/* Style des listes à puce*/
+ul {
+    list-style-type: square;
+}
+li {
+    color: black;
+}
+
+/*Sidebar d'introduction container 2*/
+section#side {
+    
+    background-image: linear-gradient(to right,#FFF 5px, #DEAE5A, #FFF 100px);
+    border:1px solid black;
+    padding: 1px;
+}
+
+/* Deuxieme container */
+section#profil {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1px;
+    background:linear-gradient(#CD5F2B, #DEAE5A); 
+    border: 1px solid black;
+}
+/* Comportement responsive deuxieme container */
+@media all and (max-width: 1024px){
+
+    section#profil {
+
+        display: block;
+    }
+}
+
+/*Image deuxieme container*/
+.relative {
+    float: right;
+    width: 70px;
+    border-radius: 300px;
+    border: 6px solid #CD5F2B;
+}
+
+/* Style au survol d'une URL */
+a:hover {
+
+    background-color:#FFE702; 
+}
+a:link {
+    text-decoration: none;
+    color:  black;
+}
+
+/* Liste images à puce */
 li.gmail {
 
     margin: 0;
@@ -219,8 +358,6 @@ li.gmail {
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 20px;
-
-
 }
 
 li.tel {
@@ -232,7 +369,6 @@ li.tel {
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 30px;
-
 }
 
 li.adress {
@@ -244,73 +380,41 @@ li.adress {
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 40px;
-
 }
 
-/*Titres des containers*/
-h1 {
-
-    font-size: 2em;
-    background-color: #B580FE;
-    color: #FFE702;
-    text-align: center;
-    border: 2px solid #2D006B;
-    border-radius: 20px;
-    padding: 2px;
-
-}
-
-/* Titres des zones de texte */
-h2 {
-    
-    font-size: 1.5em;
-    color: #FFE702;
-}
-
-/* Elements en gras */
-em {
-
-    color: #2D006B;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 1.3em;
-}
-
+/* Titres infos compétences */
 span {
-    color: #FFE702;
 
+    color: #CD5F2B;
 }
 
-/* header */
-header {
-    
-  
-    background-color: #FFE702;
-}
+/* Image sidebar pied de page*/
+section img.sidebar0 {
 
-header img.avatar-img {
-   
-    width: 120px;
+    width: 100px;
     border-radius: 300px;
-    border: 10px solid #400099;
-    float: right;
-   
-    
-
+    border: 10px solid #CD5F2B;
+    float: left;
+    margin-left: 15%;
+    margin-bottom: 10px;
 }
+/* Comportement responsive image pied de page */
+@media all and (max-width: 1024px){
 
-header h3.big-title {
+    section img.sidebar0 {
 
-    font-size: 3em;
-    text-transform: uppercase;
-    text-align: justify;
-    font-family: 'helsinki', comic sans ms;
-    color: #2D006B;
-
+        display: none;
+    }
 }
 
 /* pied de page */
 footer {
+
     display: flex;
     justify-content: center;
+}
+
+/* Texte pied de page */
+p#footer {
+    color: #CD5F2B;
 }
